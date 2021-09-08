@@ -1,4 +1,3 @@
-
 import { Action } from "../ngrx-fake/ngrx";
 
 const initialState = 10;

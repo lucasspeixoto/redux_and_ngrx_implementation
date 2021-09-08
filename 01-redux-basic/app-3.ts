@@ -23,10 +23,10 @@ const store = new Store(counterReducer, 10);
 
 console.log(store.getState());
 
-store.dispatch(incrementerAction)
+store.dispatch(incrementerAction);
 
 console.log(store.getState());
 
-store.dispatch(multiplyAction)
+store.dispatch(multiplyAction);
 
 console.log(store.getState());
