@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoModule } from './todos/todo.module';
-import { todoReducer } from './todos/todo.reducer';
+import { reducers } from './app.reducer';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],
@@ -21,7 +21,7 @@ import { todoReducer } from './todos/todo.reducer';
     AppRoutingModule,
     ReactiveFormsModule,
     TodoModule,
-    StoreModule.forRoot({ todos: todoReducer }),
+    StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,
