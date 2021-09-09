@@ -22,6 +22,7 @@ export function counterReducer(state, action) {
   return _counterReducer(state, action);
 }
 
+
 /* export function counterReducer(state = initialState, action: Action) {
   switch (action.type) {
     case increment.type:
